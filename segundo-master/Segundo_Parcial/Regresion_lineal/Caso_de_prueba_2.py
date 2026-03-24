@@ -9,6 +9,11 @@ class CasoPrueba2():
         self.xavg = 0
         self.yavg = 0
         self.n = 0
+        self.B1 = 0
+        self.B0 = 0
+        self.r2 = 0
+        self.Yk = 0
+        self.rxy = 0
 
     def leerDatos(self):
         self.x = [130,650,99,150,128,302,95,945,368,961]
@@ -20,8 +25,8 @@ class CasoPrueba2():
 
     def RealizarCalculo(self):
 
-        B1 = ((sum(self.x)*sum(self.y))-(self.n*self.xavg*self.yavg))/((sum(np.pow(self.x,2)))-(self.n*(self.xavg**2)))
-        B0 = self.yavg - B1
+        self.B1 = ((sum(self.x)*sum(self.y))-(self.n*self.xavg*self.yavg))/((sum(np.pow(self.x,2)))-(self.n*(self.xavg**2)))
+        self.B0 = self.yavg - self.B1
         rxy = (self.n*(sum(self.x)*sum(self.y))-(sum(self.x)*sum(self.y)))/((self.n*(sum(np.pow(self.x,2)))-(sum(self.x)**2))*((self.n*sum(np.pow(self.y,2)))-(sum(self.y)**2)))**(1/2)
-        r2 = rxy*rxy
-        Yk = B0+B1*self.xk
+        self.r2 = self.rxy*self.rxy
+        self.Yk = self.B0+self.B1*self.xk
