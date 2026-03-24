@@ -21,7 +21,7 @@ class VentanaRegresion(QtWidgets.QDialog):
         casoprueba1.RealizarCalculo()
         self.label_B0.setText(str(casoprueba1.B0))
         self.label_B1.setText(str(casoprueba1.B1))
-        self.label_rxy.setText(str(casoprueba1.rxy))
+        self.label_xry.setText(str(casoprueba1.rxy))
         self.label_r2.setText(str(casoprueba1.r2))
         self.label_Yk.setText(str(casoprueba1.Yk))
 
@@ -31,7 +31,7 @@ class VentanaRegresion(QtWidgets.QDialog):
         casoprueba2.RealizarCalculo()
         self.label_B0.setText(str(casoprueba2.B0))
         self.label_B1.setText(str(casoprueba2.B1))
-        self.label_rxy.setText(str(casoprueba2.rxy))
+        self.label_xry.setText(str(casoprueba2.rxy))
         self.label_r2.setText(str(casoprueba2.r2))
         self.label_Yk.setText(str(casoprueba2.Yk))
 
@@ -41,7 +41,7 @@ class VentanaRegresion(QtWidgets.QDialog):
         casoprueba3.RealizarCalculo()
         self.label_B0.setText(str(casoprueba3.B0))
         self.label_B1.setText(str(casoprueba3.B1))
-        self.label_rxy.setText(str(casoprueba3.rxy))
+        self.label_xryy.setText(str(casoprueba3.rxy))
         self.label_r2.setText(str(casoprueba3.r2))
         self.label_Yk.setText(str(casoprueba3.Yk))
 
@@ -51,6 +51,6 @@ class VentanaRegresion(QtWidgets.QDialog):
         casoprueba4.RealizarCalculo()
         self.label_B0.setText(str(casoprueba4.B0))
         self.label_B1.setText(str(casoprueba4.B1))
-        self.label_rxy.setText(str(casoprueba4.rxy))
+        self.label_xry.setText(str(casoprueba4.rxy))
         self.label_r2.setText(str(casoprueba4.r2))
         self.label_Yk.setText(str(casoprueba4.Yk))  
