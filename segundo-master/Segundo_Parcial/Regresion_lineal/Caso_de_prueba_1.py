@@ -26,6 +26,6 @@ class CasoPrueba1():
 
         self.B1 = ((sum(self.x)*sum(self.y))-(self.n*self.xavg*self.yavg))/((sum(np.pow(self.x,2)))-(self.n*(self.xavg**2)))
         self.B0 = self.yavg - self.B1
-        rxy = (self.n*(sum(self.x)*sum(self.y))-(sum(self.x)*sum(self.y)))/((self.n*(sum(np.pow(self.x,2)))-(sum(self.x)**2))*((self.n*sum(np.pow(self.y,2)))-(sum(self.y)**2)))**(1/2)
+        self.rxy = (self.n*(sum(self.x)*sum(self.y))-(sum(self.x)*sum(self.y)))/((self.n*(sum(np.pow(self.x,2)))-(sum(self.x)**2))*((self.n*sum(np.pow(self.y,2)))-(sum(self.y)**2)))**(1/2)
         self.r2 = self.rxy*self.rxy
         self.Yk = self.B0+self.B1*self.xk
