@@ -1,4 +1,4 @@
-from load.load_menu_principal import *
+from load.load_menu_principal import MenuPrincipal
 from PyQt5 import QtWidgets
 import sys
 
