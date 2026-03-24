@@ -1,6 +1,6 @@
 from PyQt5 import QtWidgets, uic, QtCore        
-from load_regresion import VentanaRegresion
-from load_integracion import VentanaIntegracion
+from load.load_regresion import VentanaRegresion
+from load.load_integracion import VentanaIntegracion
 
 class MenuPrincipal(QtWidgets.QMainWindow):
     def __init__(self):

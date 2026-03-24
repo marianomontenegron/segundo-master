@@ -11,8 +11,8 @@ class VentanaRegresion(QtWidgets.QDialog):
         self.show()
 
         self.pushButton.clicked.connect(self.botonPrueba1Click)
-        self.pushButton_2.clicked.connect(self.botonPrueba2Click)  
-        self.pushButton_3.clicked.connect(self.botonPrueba3Click)
+        self.pushButton_3.clicked.connect(self.botonPrueba2Click)  
+        self.pushButton_2.clicked.connect(self.botonPrueba3Click)
         self.pushButton_4.clicked.connect(self.botonPrueba4Click)        
 
     def botonPrueba1Click(self):
